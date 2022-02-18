@@ -37,7 +37,7 @@ int main(int argc, char** argv) {
 	cout << x << endl;
 	
 	// Ativar o 0 mais a direita
-	for (int bit = 0; bit < 32; bit++) {
+	for (int bit = 0; bit < 32; bit++) { // Ou simplesmente x = (x | (x + 1));
 		if (((x >> bit) & 1) == 0){
 			cout << bit << endl;
 			x^= (1 << bit);
@@ -50,7 +50,7 @@ int main(int argc, char** argv) {
 	// Desativar ultima sequecia de 1's
 	int y = 39;
 	
-	for (int bit = 0; bit < 32; bit++) {
+	for (int bit = 0; bit < 32; bit++) { // Ou simplesmente x = x & (x + 1)
 		if ((y >> bit) & 1){
 			while((y >> bit) & 1)
 				y^= (1 << bit++);
@@ -58,5 +58,12 @@ int main(int argc, char** argv) {
 		}
 	} 
  	cout << y << endl;
+	
+	
+	// Desativar ultima sequencia de 0's
+	int z = 36;
+	z = z | (z − 1);
+	
+	cout << z << endl;
 	return 0;
 }
