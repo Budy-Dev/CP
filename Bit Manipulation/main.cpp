@@ -10,18 +10,18 @@ int main(int argc, char** argv) {
 	int N = 8;
 	
 	
-	// Operação modular com bit manipulation usando numero de potencia 2
+	// OperaÃ§Ã£o modular com bit manipulation usando numero de potencia 2
 	cout << (S&(N-1));
 	cout << endl;
 	
-	// Determinar se numero é potencia de 2
+	// Determinar se numero Ã© potencia de 2
 	cout << (((N & (N-1)) == 0) ? "SIM" : "NAO") << endl;
 	
 	
 	// Desativar o bit mais a direita
 	int x = 40;
 	
-	for (int bit = 0; bit < 32; bit++) {
+	for (int bit = 0; bit < 32; bit++) { // Ou Simplesmente x = x & (x-1);
 		if ((x >> bit) & 1){
 			cout << bit << endl;
 			x^= (1 << bit);
