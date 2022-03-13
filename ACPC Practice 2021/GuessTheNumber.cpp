@@ -6,7 +6,7 @@ int main() {
 	
 	long left = 1;
 	long right = 100000000;
-	int cont = 0;
+	//int cont = 0;
 	
 	while (left <= right) {
 		cont++;
@@ -19,7 +19,8 @@ int main() {
 		cin >> result;
 		
 		if (result == "=") {
-			cout << "! " << N << endl << cont;
+			cout << "! " << N << endl;
+			//cout << cont;
 			return 0;
 		} else if( result == "<"){
 			right = N - 1;
