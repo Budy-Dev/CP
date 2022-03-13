@@ -9,7 +9,7 @@ int main() {
 	//int cont = 0;
 	
 	while (left <= right) {
-		cont++;
+		//cont++;
 		long N = (left + right) / 2;
 		
 		cout << N << endl;
