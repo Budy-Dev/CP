@@ -1,3 +1,5 @@
+// Resolução em O(n) usando memoização
+
 #include <bits/stdc++.h>
 #define max 46
 
@@ -19,6 +21,7 @@ int main() {
 	fib[0] = 0;
 	fib[1] = 1;
 	
+	// Essa linha abaixo pode ser removida, foi colocada apenas para resolver o problema em tempo constante O(1)
 	if (n == 1) {
 		cout << fib[0] << " " << fib[1] << endl;
 		return 0;
