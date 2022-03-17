@@ -4,7 +4,7 @@
 using namespace std;
 
 
-int fib[46];
+int fib[max];
 
 
 int main() {
