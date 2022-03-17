@@ -1,10 +1,10 @@
 #include <bits/stdc++.h>
-#define max 45
+#define max 46
 
 using namespace std;
 
 
-int fib[45];
+int fib[46];
 
 
 int main() {
